@@ -19,6 +19,7 @@ h1 {
 #search-form {
     width: 90%;
     max-width: 600px;
+    min-width: 360px;
     margin: auto;
     height: 50px;
     background-color: beige;
@@ -63,7 +64,8 @@ button {
 
 #search-result {
     width: 80%;
-    min-width: 550px;
+    min-width: 350px;
+    overflow: hidden;
     margin: 100px auto 50px;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -85,6 +87,10 @@ button {
 @media only screen and (max-width:640px) {
     .img-container {
         grid-column: auto/span 12;
+    }
+
+    button {
+        padding: 0 8px;
     }
 }
 
